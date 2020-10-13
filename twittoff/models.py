@@ -39,10 +39,8 @@ def insert_example_users():
     et1 = Tweet(id=4, text="Go to Mars", user=elon)
     et2 = Tweet(id=5, text="Buy a Tesla",  user=elon)
     et3 = Tweet(id=6, text="Boring Company", user=elon)
-    DB.session.add(bt1)
-    DB.session.add(bt2)
-    DB.session.add(bt3)
-    DB.session.add(et1)
-    DB.session.add(et2)
-    DB.session.add(et3)
+    DB.session.add(
+        bt1, bt2, bt3,
+        et1, et2, et3
+        )
     DB.session.commit()
