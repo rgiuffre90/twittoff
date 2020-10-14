@@ -12,6 +12,8 @@ flask-sqlalchemy = "*"
 tweepy = "*"
 spacy = "*"
 python-dotenv = "*"
+sklearn = "*"
+numpy = "*"
 
 [requires]
 python_version = "3.8"
